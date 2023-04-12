@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Systime</title>
+<link rel="stylesheet" href="agregar.component.scss">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+	<header>
+		<img src="images/logo1.jpg"/>
+		<br><br>
+		<ul class="nav">
+			<li><a href="#clients">Clients</a></li>
+			<!-- <li><a href="#invoices">Invoices</a></li> -->
+		</ul>
+	</header>
+	<section class="Section" id="clients">
+		<form id="dform_clients">
+			<label>
+				<span>Nombre:</span>
+				<input type="text" name="name" id="name" required />
+			</label>
+			<label>
+				<span>Apellido:</span>
+				<input type="number" name="id" id="cid" required />
+				<button type="button" id="ChangeId">Change Id</button>
+				<button type="button" id="SaveId">Save New Id</button>
+			</label>
+			<label>
+				<span>Direccion:</span>
+				<input type="text" name="address" id="address" required />
+			</label>
+			<label>
+				<span>Celular:</span>
+				<input type="number" name="phone" id="phone" required />
+			</label>
+			<label>
+				<span>Telefono:</span>
+				<input type="number" name="email" id="email" required />
+			</label>
+			<label>
+				<span>Comentario:</span>
+				<input type="number" name="hours" id="hours" required />
+			</label>
+			<div id="Buttons">
+				<button id="insert">Insert</button>
+				<button id="save">Save</button>
+				<button type="button" id="cancel">cancel</button>
+			</div>
+		</form>
+
+		<!-- <table>
+			<thead>
+				<th>Name</th>
+				<th>Client ID</th>
+				<th>Address</th>
+				<th>Phone</th>
+				<th>Email</th>
+				<th>Billable Hours</th>
+				<th></th>
+			</thead>
+			<tbody id="cdata_clients">
+			
+			</tbody>
+		</table>
+	</section> -->
+	
+	
+	<!-- <section class="Section" id="invoices">
+		<form id="dform_invoices">
+			<label>
+				<span>Item Name:</span>
+				<input type="text" name="item" id="item" required />
+			</label>
+			<label>
+				<span>Client:</span>
+					<select id="client_list" required>
+
+					</select>
+			</label>
+			<label>
+				<span>Price:</span>
+				<input type="number" name="price" id="price" required />
+			</label>
+			<label>
+				<span>Price (inc. VAT):</span>
+				<input type="number" name="priceVat" id="priceVat" required readonly />
+			</label>
+			<div id="Buttons">
+				<button id="insert_invoices">Insert</button>
+			</div>
+		</form>
+
+		<table>
+			<thead>
+				<th>Item</th>
+				<th>Client</th>
+				<th>Price</th>
+				<th>Price (inc. VAT)</th>
+				<th></th>
+			</thead>
+			<tbody id="cdata_invoices">
+			
+			</tbody>
+			<tfoot>
+				<td></td>
+				<td></td>
+				<td id="TotalPrice"></td>
+				<td id="TotalVarPrice"></td>
+			<tfoot>
+		</table>	
+	</section> -->
