@@ -18,6 +18,7 @@
         <label for="exampleInputEmail1" class="form-label">Dirección</label>
         <input [(ngModel)]="user.direccion" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
-
-    <button type="submit" class="btn btn-primary" (click)="addDepartment()">{{admin.departmentCurrent ? 'Editar' : 'Agregar'}}</button>
+    
+    <button *ngIf="action=='create'" type="submit" class="btn btn-success" (click)="addDepartment(user)">Agregar</button>
+    <button *ngIf="action=='edit'" type="submit" class="btn btn-primary" (click)="editDepartment(user)">editar</button>
 </div>

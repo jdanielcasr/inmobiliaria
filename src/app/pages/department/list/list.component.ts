@@ -44,8 +44,9 @@ export class ListComponent implements OnInit {
   }
 
   editDepartment(department) {
+    
     this.admin.departmentCurrent = department;
-    this.router.navigate(['pages/department/create']);
+    this.router.navigate(['pages/department/edit',department.id]);
 
   }
 

@@ -21,7 +21,7 @@ export class AdminService {
       "telefono": "52122"
     },
     {
-      "id": "1",
+      "id": "3",
       "nombre": "Matematicas",
       "direccion": "Calle 89",
       "telefono": "3214"
